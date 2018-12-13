@@ -1,9 +1,11 @@
 import piggy from '../porco.png'
 import React from 'react'
+import { SortForm } from './SortForm'
 
 class Nav extends React.Component {
 	render(){
 		return (
+		<div>
 			<div className="navWrapper">
 				<span className="headerText">Hogwarts</span>
 				<div className="TwirlyPig">
@@ -13,6 +15,10 @@ class Nav extends React.Component {
 				</div>
 				<span className="normalText">A React App for County Fair Hog Fans</span>
 			</div>
+			<div>
+				<SortForm sortOrFilterPigs={this.props.sortOrFilterPigs} />
+			</div>
+		</div>
 		)
 	}
 }

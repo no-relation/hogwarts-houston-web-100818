@@ -2,10 +2,10 @@
 
 ## Project goals:
 
-* ~~create an index displaying all hog tiles~~
+* ~~create an index dis playing all hog tiles~~
 * ~~render each hog name and picture in a tile~~
-* show the hog's details upon a user's click
-* allow users to sort the hogs based on name and weight and filter the hogs that are greased
+* ~~show the hog's details upon a user's click~~
+* ~~allow users to sort the hogs based on name and weight and filter the hogs that are greased~~
 
 * BONUS: allow users to hide hogs (not delete them, just hide them from view!)
 * BONUS: bring in pig gifs from an API
