@@ -20,7 +20,7 @@ export class PigList extends React.Component {
         return (
             <div className='ui grid container'>
                 {this.state.pigs.map((pig)=>(
-                    < PigTile pig={pig}/>
+                    < PigTile key={pig.id} pig={pig}/>
                 ))}
             </div>
         )
