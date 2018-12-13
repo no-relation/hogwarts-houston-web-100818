@@ -36,6 +36,7 @@ export class PigTile extends React.Component {
                     <h4>Highest Medal Won: {this.props.pig['highest medal achieved'] } </h4>
                     <img src={this.props.pig.image} height="125" width="125" alt={this.props.pig.id} onClick = {this.toggleInfo} ></img>
                     <h2>{this.props.pig.name}</h2>
+                    {this.props.pig.greased ? <p>is greased</p> : <p>is not greased</p> }
 
                 </div>
             )
