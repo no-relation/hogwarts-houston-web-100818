@@ -10,12 +10,18 @@ export class PigList extends React.Component {
         }
     }
 
+    componentDidMount() {
+        fetch('http://localhost:3001/hogs')
+            .then(resp => resp.json())
+            .then(data => this.setState({pigs: data}))
+    }
 
     render() {
         return (
             <div className='ui grid container'>
-                <h1>Pig List goes here</h1>
-                < PigTile />
+                {this.state.pigs.map((pig)=>(
+                    < PigTile pig={pig}/>
+                ))}
             </div>
         )
     }
